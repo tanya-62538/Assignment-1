@@ -1,0 +1,257 @@
+#STRING METHODS
+
+#capitalize()
+#Converts the first character to upper case
+a="hello"
+b=a.capitalize()
+print(b)
+#casefold()	
+#Converts string into lower case
+c="Hello"
+d=c.casefold()
+print(d)
+#center()	
+#Returns a centered string
+e="Hello"
+f=e.center(52)
+print(f)
+#count()	
+#Returns the number of times a specified value occurs in a string
+g="Hello czechoslovakia"
+h=g.count("czechoslovakia")
+print(h)
+#encode()	
+#Returns an encoded version of the string
+i=g.encode()
+print(i)
+#endswith()	
+#Returns true if the string ends with the specified value
+j = "Hello."
+k = j.endswith(".")
+print(k)
+#expandtabs()	
+#Sets the tab size of the string
+l = "H\te\tl\tl\to"
+m =  l.expandtabs(3)
+print(m)
+#find()	
+#Searches the string for a specified value and returns the position of where it was found
+n = "Hello hey"
+o = n.find("hey")
+print(o)
+#format()	
+#Formats specified values in a string
+bat = "For {cost:.2f} rs"
+print(bat.format(cost = 10))
+
+#format_map()	
+#Formats specified values in a string
+#same as format()
+#index()	
+#Searches the string for a specified value and returns the position of where it was found
+p = "Hello, welcome."
+q = p.index("welcome")
+print(q)
+#isalnum()	
+#Returns True if all characters in the string are alphanumeric
+r = "Hello23"
+s = r.isalnum()
+print(s)
+#isalpha()	
+#Returns True if all characters in the string are in the alphabet
+t = "HelLO"
+u = t.isalpha()
+print(u)
+#isdecimal()	
+#Returns True if all characters in the string are decimals
+v = "5"
+w = v.isdecimal()
+print(w)
+#isdigit()	
+#Returns True if all characters in the string are digits
+x = "25"
+y = x.isdigit()
+print(y)
+#isidentifier()	
+#Returns True if the string is an identifier
+A = "HELLO"
+B = A.isidentifier()
+print(B)
+#islower()	
+#Returns True if all characters in the string are lower case
+C = "hello"
+D = C.islower()
+print(D)
+#isnumeric()	
+#Returns True if all characters in the string are numeric
+E = "25555"
+F = E.isnumeric()
+print(F)
+#isprintable()	
+#Returns True if all characters in the string are printable
+G = "Hello! @#1?"
+H = G.isprintable()
+print(H)
+#isspace()	
+#Returns True if all characters in the string are whitespaces
+I = "       "
+J = I.isspace()
+print(J)
+#istitle()	
+#Returns True if the string follows the rules of a title
+K = "Hello World!"
+L = K.istitle()
+print(L)
+#isupper()	
+#Returns True if all characters in the string are upper case
+M = "HELLO WORLD!"
+N = M.isupper()
+print(N)
+#join()	
+#Joins the elements of an iterable to the end of the string
+myTuple = ("Jo", "Pete", "Vi")
+O = "@".join(myTuple)
+print(O)
+#ljust()	
+#Returns a left justified version of the string
+P = "WELCOME"
+Q = P.ljust(5)
+print(Q, "TO MY WORLD.")
+#lower()	
+#Converts a string into lower case
+R = "  Hello   wOrLd   "
+T = R.lower()
+print(T)
+#lstrip()	
+#Returns a left trim version of the string
+S = R.lstrip()
+print(S)
+#maketrans()	
+#Returns a translation table to be used in translations
+V = "SAY Hello!"
+table = V.maketrans("S", "P")
+print(V.translate(table))
+#partition()	
+#Returns a tuple where the string is parted into three parts
+U = V.partition("Hello")
+print(U)
+#replace()	
+#Returns a string where a specified value is replaced with a specified value
+W = V.replace("Hello", "HI")
+print(W)
+#rfind()	
+#Searches the string for a specified value and returns the last position of where it was found
+X= V.rfind("Hello")
+print(X)
+#rindex()	
+#Searches the string for a specified value and returns the last position of where it was found
+Y = V.rindex("l")
+print(Y)
+#rjust()	
+#Returns a right justified version of the string
+Z= V.rjust(20)
+print(Z, "to the World.")
+#rpartition()	
+#Returns a tuple where the string is parted into three parts
+ab = "I could eat apples all day, apples are my favorite fruit"
+aa = ab.rpartition("apples")
+print(aa)
+#rsplit()	
+#Splits the string at the specified separator, and returns a list
+ac = "pam, sam"
+ca = ac.rsplit(", ")
+print(ca)
+#rstrip()	
+#Returns a right trim version of the string
+ad = "     hello world    "
+da = ad.rstrip()
+print(da)
+#split()	
+#Splits the string at the specified separator, and returns a list
+ae = "Hello World"
+ea = ae.split()
+print(ea)
+#splitlines()	
+#Splits the string at line breaks and returns a list
+af = "Thank\You"
+fa = af.splitlines()
+print(fa)
+#startswith()	
+#Returns true if the string starts with the specified value
+ag = "Hello World."
+ga = ag.startswith("Hello")
+print(ga)
+#strip()	
+#Returns a trimmed version of the string
+ah = "     hello     "
+ha = ah.strip()
+print(ha)
+#swapcase()	
+#Swaps cases, lower case becomes upper case and vice versa
+ai = "Hello World"
+ia = ai.swapcase()
+print(ia)
+#title()	
+#Converts the first character of each word to upper case
+aj = "hello world"
+ja = aj.title()
+print(ja)
+#translate()	
+#Returns a translated string
+mydict = {83:  80}
+text = "Hello Sam!"
+print(text.translate(mydict))
+#upper()	
+#Converts a string into upper case
+ajj = aj.upper()
+print(ajj)
+#zfill()	
+#Fills the string with a specified number of 0 values at the beginning
+ak = "5"
+ka = ak.zfill(4)
+print(ka)
+
+#LIST METHODS
+
+#append()	
+#Adds an element at the end of the list
+alphabet = ["a", "b"]
+alphabet.append("c")
+print(alphabet)
+#copy()	
+#Returns a copy of the list
+al=alphabet.copy()
+print(al)
+#count()	
+#Returns the number of elements with the specified value
+am = alphabet.count("a")
+print(am)
+#extend()	
+#Add the elements of a list (or any iterable), to the end of the current list
+numbers =['1','2']
+alphabet.extend(numbers)
+print(alphabet)
+#index()	
+#Returns the index of the first element with the specified value
+an = alphabet.index("b")
+print(an)
+#insert()	
+#Adds an element at the specified position
+alphabet.insert(3, "d")
+print(alphabet)
+#pop()	
+#Removes the element at the specified position
+alphabet.pop(3)
+print(alphabet)
+#reverse()	
+#Reverses the order of the list
+alphabet.reverse()
+print(alphabet)
+#sort()	
+#Sorts the list
+alphabet.sort()
+print(alphabet)
+#clear()	
+#Removes all the elements from the list
+alphabet.clear()
+print(alphabet)
